@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Groceries</title>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <!-- header /navbar -->
+    <nav class="navigation-grocery">
+        <div class="icon">
+            <img src="assets/icon.png" alt="Logo" class="logo"></img>
+        <span>RevoU</span>
+        </div>
+        <div class="navigation-item">
+            <button ><a href="#">Home</a></button>
+            <button ><a href="#product">Our Product</a></button>
+            <button ><a href="#contact">Contact Us</a></button>
+        </div>
+    </nav>
+    <header>
+        <h1 class="header">Hello welcome to RevoU E-Grocery Site</h1>
+        <h4 class="gray">Everything you need is our service</h4>
+    </header>
+    <!-- content -->
+    <main class="main-container">
+        <div class="product" id="product">
+            <div class="jumbotron">
+                <div id="slider">
+                    <div id="slides">
+                        <div class="slide"><img src="assets/slide1.jpg" alt="slide1"></div>
+                        <div class="slide"><img src="assets/slide2.jpg" alt="slide2"></div>
+                        <div class="slide"><img src="assets/slide3.jpg" alt="slide2"></div>
+                    </div>
+                </div>
+                <img src="assets/jumbrotron.png" alt="product image" class="jumbotron-image"></img>
+            </div>
+            <div class="product-more">
+                <p class="gray">"Barang selalu fresh dan terjaga kualitasnya".</p>
+                <div class="user-writter">
+                    <img src="assets/user.png" alt="user-icon"></img>
+                    <div class="user-detail">
+                        <h5>Alif Rahman</h5>
+                        <h6 class="gray">Pelajar, 18</h6>
+                    </div>
+                </div>
+            </div>
+            <hr class="strip-line">
+            <div class="below">
+                <div class="note"><p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explani the benefits of your service or product</p></div>
+                <ul>
+                    <li><div class="below-number">1</div><div class="bellow-text">your first feature, written in the form of a benefit statement.</div></li>
+                    <li><div class="below-number">2</div><div class="bellow-text">your second feature, written in the form of a benefit statement.</div></li>
+                    <li><div class="below-number">3</div><div class="bellow-text">your third feature written, in the form of a benefit statement.</div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-form" id="contact">
+                <aside class="form-container"> 
+                <h3 class="form-tittle">Contact Us</h3>
+                <p class="form-desc gray">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                <div class="form-inside">
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="fname">Your Name:</label>
+                                <input type="text" id="input-name" name="name" placeholder="First and Last Name">
+                                <p class="error-message" id="name-error"></p>
+                            </li>
+                            <li>
+                                <label for="lname">Email Address:</label>
+                                <input type="text" id="input-email" name="email" placeholder="example@email.com">
+                                <p class="error-message" id="email-error"></p>
+                            </li>
+                            <li>
+                                <label for="country">What are you interest in?</label>
+                                <select id="country" name="country" id="input-option" required="required">
+                                    <option value="">Select option</option>
+                                    <option value="food">Food</option>
+                                    <option value="drink">Drink</option>
+                                    <option value="fruit">Fruit</option>
+                                </select>
+                                <p class="error-message oputput" id="option-error"></p>
+                            </li>
+                        </ul>
+                  
+                  
+                    
+                      <input type="button" value="Send" id="tombol-kirim">
+                    </form>
+                  </div>
+            </aside>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+<!-- create by AlstorVal for SEFC RevoU  -->
+
+</html>
