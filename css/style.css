@@ -1,0 +1,544 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-image: url("../assets/background.jpg");
+    background-position: center;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.strip-line {
+    width: 40%;
+    color: #8f8f91;
+    height: 0.3rem;
+    background-color: #525253;
+    border-radius: 0.2rem;
+}
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+#slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+/* create by AlstorVal for SEFC RevoU  */
+@media only screen and (min-width: 600px) {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-grocery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 0.18rem solid rgb(167, 167, 167);
+    margin-bottom: 2rem;
+    padding: 0.5rem 2.5rem 0.5rem 3.5rem;
+    background-color: #e9e9ec;
+}
+
+.navigation-grocery .icon {
+    justify-self: start ;
+}
+.navigation-grocery .icon span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navigation-grocery .icon img {
+    font-size: 15px;
+    width: 5rem;
+}
+.navigation-item {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 22px;
+}
+.navigation-item button a{
+    text-decoration: none;
+    color: #c4c4c4;/* Some padding */
+}
+.navigation-item button {
+    text-align: center;
+    background-color: #5e5e5e; /* Green background */
+    border: 1px solid rgb(56, 56, 56); /* Green border */
+    color: #c4c4c4; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+.navigation-item button:first-child{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    
+}
+.navigation-item button:last-child{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+}
+.navigation-item button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  /* Clear floats (clearfix hack) */
+.navigation-item:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.navigation-item button:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+.navigation-item button a:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+header {
+    text-align: center;
+    background-color: #d6d8e6;
+}
+header img {
+    width: 100%;
+}
+header h1.header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 1rem;
+    width: 50%;
+}
+header h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+main.main-container {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product {
+    width: 60%;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: #d6d8e6;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+}
+.product .jumbotron img {
+    margin-top: 1rem;
+    width: 100%;
+}
+.product-more {
+    padding: 2rem 4rem;
+    padding-right: 8rem;
+    font-size: 1.5rem;
+
+}
+.product-more p {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.user-writter {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.user-writter img{
+    padding: 1rem;
+    padding-left: 0;
+    width: 4rem;
+    height: auto;
+}
+.user-writter .user-detail {
+    padding: 1rem;
+}
+.user-writter .user-detail h5 {
+    font-weight: 600;
+}
+.side-form {
+    width: 40%;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: #d6d8e6;
+    border-radius: 2%;
+    align-self: baseline;
+}
+.form-container {
+    padding: 5rem 3rem
+}
+.form-container h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.form-container p {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+.below {
+    padding: 2rem;
+    padding-right: 5rem;
+}
+.below > .note {
+    width: 65%;
+}
+.below > .note p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.below-number {
+    display: inline-block;
+    color: #898c9b;
+    background-color: #c3c6d6;
+    width: 1rem;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.bellow-text {
+    display: inline-block;
+    width: 19rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.gray {
+    color: #898c9b;
+}
+.form-inside {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+.form-inside label {
+    padding: 1rem 0;
+    display: block;
+}
+.form-inside input[type=text], select {
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 100%;
+}
+.form-inside input[type=text]:focus {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+.form-inside input[type=button] {
+    margin-top: 2rem;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 4rem;
+    font-size: 1.2rem;
+    background-color: #5e5e5e; /* Green background */
+    border: 1px solid rgb(56, 56, 56); /* Green border */
+    color: #c4c4c4; /* White text */
+    border-radius: 1rem;
+    cursor: pointer;
+}
+  
+.form-inside input[type=button]:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+}
+p.error-message {
+    margin-left: 2px;
+    color: #d84040;
+    font-size: 1rem;
+}
+}
+@media only screen and (max-width: 600px) {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-grocery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 0.18rem solid rgb(167, 167, 167);
+    margin-bottom: 2rem;
+    padding: 0.5rem 2.5rem 0.5rem 3.5rem;
+    background-color: #e9e9ec;
+}
+
+.navigation-grocery .icon {
+    justify-self: start ;
+}
+.navigation-grocery .icon span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navigation-grocery .icon img {
+    font-size: 15px;
+    width: 5rem;
+}
+.navigation-item {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 11px;
+}
+.navigation-item button a{
+    text-decoration: none;
+    color: #c4c4c4;/* Some padding */
+}
+.navigation-item button {
+    text-align: center;
+    background-color: #5e5e5e; /* Green background */
+    border: 1px solid rgb(56, 56, 56); /* Green border */
+    color: #c4c4c4; /* White text */
+    padding: 5px 12px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+.navigation-item button:first-child{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    
+}
+.navigation-item button:last-child{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+}
+.navigation-item button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  /* Clear floats (clearfix hack) */
+.navigation-item:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.navigation-item button:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+.navigation-item button a:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+header {
+    text-align: center;
+    background-color: #d6d8e6;
+}
+header img {
+    width: 100%;
+}
+header h1.header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    width: 75%;
+}
+header h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+main.main-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    width: 85%;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: #d6d8e6;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+}
+.product .jumbotron img {
+    margin-top: 1rem;
+    width: 100%;
+}
+.product-more {
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+.product-more p {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.user-writter {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.user-writter img{
+    padding: 1rem;
+    padding-left: 0;
+    width: 4rem;
+    height: auto;
+}
+.user-writter .user-detail {
+    padding: 1rem;
+}
+.user-writter .user-detail h5 {
+    font-weight: 600;
+}
+.side-form {
+    width: 85%;
+    margin-top: 1rem;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: #d6d8e6;
+    border-radius: 2%;
+    align-self: baseline;
+}
+.form-container {
+    padding: 5rem 3rem
+}
+.form-container h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.form-container p {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+.below {
+    padding: 1rem;
+}
+.below > .note {
+    width: 85%;
+}
+.below > .note p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.below-number {
+    display: inline-block;
+    color: #898c9b;
+    background-color: #c3c6d6;
+    width: 1rem;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.bellow-text {
+    display: inline-block;
+    width: 19rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.gray {
+    color: #898c9b;
+}
+.form-inside {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+.form-inside label {
+    padding: 1rem 0;
+    display: block;
+}
+.form-inside input[type=text], select {
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 100%;
+}
+.form-inside input[type=text]:focus {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+  }
+.form-inside input[type=button] {
+    margin-top: 2rem;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 4rem;
+    font-size: 1.2rem;
+    background-color: #5e5e5e; /* Green background */
+    border: 1px solid rgb(56, 56, 56); /* Green border */
+    color: #c4c4c4; /* White text */
+    border-radius: 1rem;
+    cursor: pointer;
+}
+  
+.form-inside input[type=button]:hover {
+    background-color: #ffc70e;
+    color: #1b1b1b;
+}
+p.error-message {
+    margin-left: 2px;
+    color: #d84040;
+    font-size: 1rem;
+}
+}
